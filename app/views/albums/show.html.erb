@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @album.title %>
+</p>
+
+<p>
+  <strong>Info:</strong>
+  <%= @album.info %>
+</p>
+
+<%= link_to "add pictures", new_city_album_picture_path(@city,@album) %>
+
+<%= link_to 'Back', city_path %>
